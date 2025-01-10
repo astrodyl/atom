@@ -1,0 +1,25 @@
+# Einstein Probe Test TOML file
+
+[observation]
+    mode       = 2
+    isToo      = 1
+    grbId      = -1
+    minEl      = 20
+    maxSun     = -12
+    efficiency = 1.0
+    cancelAfterDays  = 0.02  # 30 minutes
+    tooJustification = "Automated GRB Follow Up"
+
+
+[trigger]
+    campaignId     = 117
+    refSNR         = 10.0
+    refMagnitude   = 20.0
+    refTime        = 3600.0
+    refFilterId    = 9
+    expFunction    = "power"
+    tempIndex      = -1
+    specIndex      = -0.7
+    ebv            = 0.0
+    isBrightTarget = 1
+    delay          = "None"

@@ -1,0 +1,38 @@
+# Einstein Probe Settings TOML file
+
+
+[observation]
+    [observation.early]
+        mode       = 2
+        isToo      = 0
+        grbId      = -1
+        minEl      = 20
+        maxSun     = -12
+        efficiency = 1.0
+        minMoonSepDegs   = 0
+        cancelAfterDays  = 0.02  # 30 minutes
+        targetTracking   = 'track_target'
+        tooJustification = "Automated GRB Follow Up"
+
+        [observation.early.trigger]
+            campaignId     = 117
+            refSNR         = 15.0
+            refMagnitude   = 20.0
+            refTime        = 3600.0
+            expFunction    = "power"
+            tempIndex      = -1
+            specIndex      = -0.7
+            ebv            = 0.0
+            isBrightTarget = 1
+            delay          = 0
+            refFilterRequested = 'R'
+
+
+[notification]
+    [notification.slack]
+#        channel = "einstein-probe-triggers"
+        channel = "listener-testing"
+        url     = "https://slack.com/api/chat.postMessage"
+
+#    [notification.groupme]
+#        url = "https://api.groupme.com/v3/bots/post"

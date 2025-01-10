@@ -1,0 +1,11 @@
+
+
+[topics]
+    igwn       = 'igwn.gwalert'
+    einstein   = 'gcn.notices.einstein_probe.wxt.alert'
+    swift_bat  = 'gcn.classic.voevent.SWIFT_BAT_GRB_POS_ACK'
+    swift_xrt  = 'gcn.classic.voevent.SWIFT_XRT_POSITION'
+    swift_uvot = 'gcn.classic.voevent.SWIFT_UVOT_POS'
+
+[test]
+    swift_bat = 'gcn.classic.voevent.SWIFT_BAT_GRB_POS_TEST'
